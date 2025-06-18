@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Homework Tracker</h1>
+  <button id="themeToggle" class="theme-toggle">🌙 Dark Mode</button>
+  <form id="taskForm">
+    <div class="input-group">
+      <input type="text" id="subject" required>
+      <label for="subject">Subject</label>
+    </div>
+  
+    <div class="input-group">
+      <input type="text" id="title" required>
+      <label for="title">Homework Title</label>
+    </div>
+  
+    <div class="input-group">
+      <input type="date" id="dueDate" required>
+      <label for="dueDate">Due Date</label>
+    </div>
+  
+    <button type="submit">Add Homework</button>
+  </form>
+
+  <ul id="taskList"></ul>
+
+  <script src="script.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-messaging-compat.js"></script>
+</body>
+</html>
