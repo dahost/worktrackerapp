@@ -1,0 +1,297 @@
+:root {
+    --bg-color: #3c7fe4;
+    --text-color: #333;
+    --card-bg: #fff;
+    --input-border: #ccc;
+    --accent-color: #007bff;
+    --button-bg: #007bff;
+    --button-hover: #0056b3;
+    --input-bg: #fff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+  }
+  *{
+    font-family: sans-serif;
+}  
+  body.dark-mode {
+    --bg-color: #000a38;
+    --text-color: #ffffff;
+    --card-bg: #1e1e1e;
+    --input-border: #444;
+    --accent-color: #90caf9;
+    --button-bg: #0d47a1;        /* Deep blue */
+    --button-hover: #08306b;     /* Darker deep blue */
+    --input-bg: #1e1e1e;
+    --shadow-color: rgba(255, 255, 255, 0.1);
+  }
+
+  h1 {
+    margin-bottom: 30px;
+  }
+  h1 {
+    text-align: center;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 60px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input, button {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 30px auto 0;
+  }
+  
+
+  
+  .card:hover {
+    transform: scale(1.01);
+  }
+  
+  .completed {
+    background-color: #e0ffe0;
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .actions button {
+    margin-left: 5px;
+    padding: 6px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .actions button:last-child {
+    background-color: #dc3545;
+  }
+
+  input:hover,
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 14px 12px 14px 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background: none;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+  }
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  form {
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+  
+  .input-group input {
+    border: 2px solid var(--input-border);
+    background-color: var(--input-bg);
+    color: var(--text-color);
+  }
+  
+  .input-group input:focus,
+  .input-group input:hover {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 6px var(--accent-color);
+  }
+  
+  .input-group label {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+  }
+  
+  button {
+    background-color: var(--button-bg);
+  }
+  
+  button:hover {
+    background-color: var(--button-hover);
+  }
+  .card {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 16px auto;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 16px var(--shadow-color); /* <-- Box shadow */
+    transition: all 0.3s ease;
+    font-family: inherit;
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .card p {
+    margin: 4px 0;
+  }
+  
+  .card .buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+  }
+  
+  .card .buttons button {
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px var(--shadow-color);
+  }
+  
+  .card .buttons .complete-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .card .buttons .delete-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .card .buttons .complete-btn:hover {
+    background-color: #388e3c;
+  }
+  
+  .card .buttons .delete-btn:hover {
+    background-color: #c62828;
+  }
+  
+  .completed {
+    background-color: #2e7d32;
+    color: white;
+    text-decoration: none;
+  }
+  .theme-toggle {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  @media (max-width: 500px) {
+    form {
+      padding: 24px 18px;
+    }
+  }
+  /* Mobile phones (up to 480px) */
+@media (max-width: 480px) {
+    h1 {
+      font-size: 22px;
+    }
+  
+    form {
+      padding: 20px 16px;
+      width: 90%;
+    }
+  
+    input, button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .card {
+      padding: 16px;
+      margin: 12px auto;
+      width: 95%;
+    }
+  
+    .card h3 {
+      font-size: 16px;
+    }
+  
+    .card .buttons {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    .theme-toggle {
+      padding: 6px 12px;
+      font-size: 12px;
+      top: 10px;
+      right: 12px;
+    }
+  }
+  
+  /* Tablets (481px to 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    form, .card, ul {
+      width: 90%;
+    }
+  
+    h1 {
+      font-size: 26px;
+    }
+  
+    .card h3 {
+      font-size: 17px;
+    }
+  }
